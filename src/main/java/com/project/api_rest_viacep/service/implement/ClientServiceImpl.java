@@ -76,5 +76,6 @@ public class ClientServiceImpl implements ClientService {
            return newAddress;
         });
         client.setAddress(address);
+        clientRepository.save(client);
     }
 }
